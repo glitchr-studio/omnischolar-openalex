@@ -1,0 +1,44 @@
+{
+    "name": "omnischolar/openalex",
+    "type": "library",
+    "description": "Omnischolar OpenAlex: an author's profile and counts (works, citations, h-index), their works with abstracts, citations and open-access links, any work by DOI - through the OpenAlex API, no key needed.",
+    "keywords": [
+        "scholarly",
+        "publications",
+        "openalex",
+        "citations",
+        "h-index",
+        "omnischolar"
+    ],
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnischolar": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnischolar\\OpenAlex\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnischolar\\OpenAlex\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
